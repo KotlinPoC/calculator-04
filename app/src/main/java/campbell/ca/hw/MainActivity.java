@@ -43,14 +43,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1+num2));
+        if (readNums())
+            result.setText(Double.toString(num1+num2));
     }
     public void subtrNums(View v) {
-        if (!readNums())
-            return;
-        result.setText(Double.toString(num1-num2));
+        if (readNums())
+            result.setText(Double.toString(num1-num2));
     }
     public void divNums(View v) {
         if (!readNums())
@@ -61,9 +59,8 @@ public class MainActivity extends AppCompatActivity {
             result.setText(Double.toString(num1/num2));
     }
     public void multNums(View v) {
-        if (!readNums())
-            return;
-        result.setText(Double.toString(num1*num2));
+        if (readNums())
+            result.setText(Double.toString(num1*num2));
     }
     public boolean readNums()  {
       if (etNum1.getText().toString().isEmpty() ||  etNum2.getText().toString().isEmpty() ) {
