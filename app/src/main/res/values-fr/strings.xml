@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Calculatrice Simple</string>
+    <string name="app_name">Calculatrice v4</string>
     <string name="add">Ajouter</string>
     <string name="div">Diviser</string>
     <string name="enter_hint">Entrez un numéro</string>
